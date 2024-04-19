@@ -1,7 +1,7 @@
 import {Tilt} from 'react-tilt';
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
-import { github } from '../assets';
+import { link } from '../assets';
 import { SectionWrapper } from '../hoc';
 import { projects } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
@@ -30,10 +30,10 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link})
           <div className='absolute inset-0 flex justify-end m-3 card_image_hover'>
             <div
               onClick={() => window.open(source_code_link, "_blank")}
-              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+              className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
             >
               <img 
-                src={github}
+                src={link}
                 alt='github'
                 className='w-2/3 h-2/3 object-contain'
               />
@@ -73,7 +73,7 @@ const Works = () => {
       <div className='w-full flex'>
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
+          className='mt-3 text-secondary text-[17px] max-w-6xl leading-[30px]'
         >
           Delve into My Portfolio of Diverse and Impactful Projects, exemplifying my proficiency in software development and innovative problem-solving. With a proven track record of delivering high-quality solutions, I've earned trust and recognition for my dedication to excellence and forward-thinking approaches. <br/>From fine-tuning APIs for enhanced efficiency to enhancing UI components for seamless user experiences, each project reflects my dedication to excellence and forward-thinking solutions. Explore my work to witness how I've consistently streamlined processes and elevated user engagement through advanced features such as CSV exports and more.Explore my work to see how I can contribute to your organization's success.
 

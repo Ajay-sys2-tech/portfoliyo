@@ -3,7 +3,7 @@ import {Tilt} from "react-tilt";
 import { motion } from 'framer-motion';
 
 import { styles } from '../styles';
-import { services } from '../constants';
+import { services, socials } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 
 import { SectionWrapper } from '../hoc';
@@ -33,6 +33,22 @@ const ServiceCard = ({ index, title, icon }) => {
   )
 }
 
+const SocialCard = ({index, icon, link}) => {
+  return (
+    <motion.div
+       variants={fadeIn("right", "spring", 0.8 * index, 0.75)}
+    >
+      <div
+        onClick={() => window.open(link, "_blank")}
+        className=''
+      >
+            <img src={icon} alt={index} 
+            className='shadow-lg shadow-white w-16 h-16 object-contain rounded-full hover:cursor-pointer' />
+          </div>
+    </motion.div>
+  )
+}
+
 
 const About = () => {
   return (
@@ -47,17 +63,23 @@ const About = () => {
       </motion.div>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className='mt-4 text-secondary text-[17px] max-w-6xl leading-[30px]'
       >
-        Results-driven software engineer with 7-8 months of professional experience and 1 year of internship experience, specializing in full-stack development. Proficient in data structures, algorithms, and design thinking. GCP Certified Associate Cloud Engineer with a track record of solving 400+ problems on LeetCode. Aspiring full-stack expert focused on industry leadership. Known for strong personal attributes including empathy, time management, and planning skills.
+        Results-driven software engineer with 1 year of professional experience and 1 year of internship experience, specializing in full-stack development. Proficient in data structures, algorithms, and design thinking. GCP Certified Associate Cloud Engineer with a track record of solving 400+ problems on LeetCode. Aspiring full-stack expert focused on industry leadership. Known for strong personal attributes including empathy, time management, and planning skills.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
-
         ))}
       </div>
+
+      <div className='mt-20 flex place-self-center justify-around gap-1'>
+        {socials.map((social, index) => (
+          <SocialCard key={social.title} index={index} {...social} />
+        ))}
+      </div>
+
     </>
   )
 }

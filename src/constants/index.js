@@ -5,6 +5,9 @@ import {
     web,
     javascript,
     typescript,
+    java,
+    spring, 
+    mysql,
     html,
     css,
     reactjs,
@@ -15,14 +18,17 @@ import {
     git,
     figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
-    threejs,
+    tcs,
+    persistent,
+    vitto,
+    letflix,
+    reactcart,
+    glocify,
+    weather,
+    gcp,
+    github,
+    linkedin,
+    twitter
   } from "../assets";
   
   export const navLinks = [
@@ -46,7 +52,7 @@ import {
       icon: web,
     },
     {
-      title: "Full stack Developer",
+      title: "Frontend Developer",
       icon: mobile,
     },
     {
@@ -77,12 +83,16 @@ import {
       icon: typescript,
     },
     {
+      name: "Java",
+      icon: java,
+    },
+    // {
+    //   name: "Spring",
+    //   icon: spring,
+    // },
+    {
       name: "React JS",
       icon: reactjs,
-    },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
     },
     {
       name: "Tailwind CSS",
@@ -97,60 +107,79 @@ import {
       icon: mongodb,
     },
     {
-      name: "Three JS",
-      icon: threejs,
+      name: "Mysql",
+      icon: mysql,
     },
     {
       name: "git",
       icon: git,
     },
-    {
-      name: "figma",
-      icon: figma,
-    },
+    // {
+    //   name: "figma",
+    //   icon: figma,
+    // },
     {
       name: "docker",
       icon: docker,
     },
+    {
+      name: "GCP",
+      icon: gcp,
+    },
   ];
+
+  const socials = [
+    { title: "github",
+      icon: github,
+      link: "https://github.com/Ajay-sys2-tech"
+    },
+
+    { title: "linkedin",
+      icon: linkedin,
+      link: "https://www.linkedin.com/in/ajay-yadav-735380176/"
+    },
+
+    { title: "twitter",
+      icon: twitter,
+      link: "https://twitter.com/AjayYadav_io"
+    },
+
+  ]
   
   const experiences = [
     {
       title: "Machine Learning Engineer Intern",
       company_name: "TCS",
-      icon: starbucks,
-      iconBg: "#383E56",
+      icon: tcs,
+      iconBg: "#000000",
       date: "June 2022 - July 2022",
       points: [
-        "Engaged in a transformative internship experience at Tata Consultancy Services (TCS) as a Machine Learning Intern, contributing to a cutting-edge medical research project.",
-        "Leveraged my expertise in machine learning to develop and implement functions focused on Natural Language Processing (NLP), enhancing data analysis capabilities for medical research purposes.",
-        "Collaborated closely with a multidisciplinary team of researchers and developers to refine algorithms and methodologies, ensuring the accuracy and efficacy of NLP-based solutions.",
-        "Actively participated in project discussions and brainstorming sessions, contributing innovative ideas and insights to drive project progress and success.",
+        "Developed NLP functions for medical research data analysis.",
+        "Collaborated with multidisciplinary team to refine algorithms.",
+        "Demonstrated strong problem-solving skills in optimizing NLP algorithms.",
       ],
     },
     {
       title: "Software Engineer Trainee",
       company_name: "Persistent Systems",
-      icon: tesla,
-      iconBg: "#E6DEDD",
+      icon: persistent,
+      iconBg: "#554b59",
       date: "Dec 2022 - May 2023",
       points: [
-        "Gained industry experience at Persistent Systems, exploring diverse technologies.",
         "Mastered Java and Spring Boot for building robust applications.",
         "Specialized in Spring MVC, Spring Data, and Spring Security frameworks.",
         "Explored cloud platforms like AWS and GCP for enterprise applications.",
         "Developed proficiency in front-end technologies (HTML, CSS, JavaScript).",
         "Utilized Git for collaborative development and maintaining codebase integrity.",
         "Acquired knowledge in Docker for containerization.",
-        "Learned Kubernetes for container orchestration.",
         "Applied theoretical concepts in real-world projects, refining problem-solving skills.",
       ],
     },
     {
       title: "Full Stack Engineer Intern",
       company_name: "Vitto Microfinance.AI",
-      icon: shopify,
-      iconBg: "#383E56",
+      icon: vitto,
+      iconBg: "#FFFFFF",
       date: "May 2023 - Sept 2023",
       points: [
        "During my immersive Full Stack internship in a dynamic fintech startup, I spearheaded various projects leveraging the PERN stack",
@@ -162,11 +191,11 @@ import {
       ],
     },
     {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      title: "Software Engineer",
+      company_name: "Persistent Systems",
+      icon: persistent,
+      iconBg: "#554b59",
+      date: "Sept 2023 - Present",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -205,68 +234,83 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Letflix",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "mongodb",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: carrent,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Job IT",
-      description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A Movie Searching Website featuring sleek animations and a Dark Mode option for enhanced user experience. Designed with modern aesthetics, users can effortlessly search for movies, explore details, and toggle between light and dark themes for personalized viewing.",
       tags: [
         {
           name: "nextjs",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "tailwind",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: letflix,
+      source_code_link: "https://letflix-vert.vercel.app/",
+    },
+    {
+      name: "E-commerce with Payment System",
+      description:
+        "An E-commerce platform with integrated Razorpay for secure online transactions. Developed intuitive user interface and robust backend functionality, ensuring seamless shopping experience and efficient order processing.",
+      tags: [
+        {
+          name: "html/css",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "handlebars",
           color: "green-text-gradient",
+        },
+        {
+          name: "nodejs",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: glocify,
+      source_code_link: "https://glocify.onrender.com/",
+    },
+    {
+      name: "Weather App",
+      description:
+        "A Weather Application enabling users to search and check weather conditions for any city worldwide. The app provides real-time weather updates. With a user-friendly interface and intuitive search functionality, this project showcases proficiency in app development and integration with weather APIs for dynamic data retrieval.",
+      tags: [
+        {
+          name: "html/css",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "third-party api",
+          color: "green-text-gradient",
+        },
+        {
+          name: "javascript",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: weather,
+      source_code_link: "https://howstheweather.onrender.com/",
+    },
+
+    {
+      name: "React Shopping Cart",
+      description:
+        "A React.js Shopping Cart for seamless product browsing, selection, and checkout. Allows users to add, view, and manage items in the cart dynamically.",
+      tags: [
+        {
+          name: "reactjs",
+          color: "blue-text-gradient",
         },
         {
           name: "css",
           color: "pink-text-gradient",
         },
+       
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: reactcart,
+      source_code_link: "https://react-shopping-cart-23.netlify.app/",
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, testimonials, projects, socials };
