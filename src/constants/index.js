@@ -25,10 +25,15 @@ import {
     reactcart,
     glocify,
     weather,
+    emp,
     gcp,
     github,
     linkedin,
-    twitter
+    twitter,
+    ace,
+    leetcode,
+    gfg,
+    hackerrank
   } from "../assets";
   
   export const navLinks = [
@@ -204,6 +209,30 @@ import {
       ],
     },
   ];
+
+  const achievements = [
+    {
+      title: "Google Certified Cloud Associate Engineer",
+      image: ace,
+      link: "https://drive.google.com/file/d/1LfGEiho0BM3f9o4AwvEY5sRxzllqA8ui/view?usp=sharing"
+    },
+   
+    {
+      title: "Solved 430+ DSA problmes",
+      image: leetcode,
+      link: "https://leetcode.com/ajay_yadav/"
+    },
+    {
+      title: "Solved 100+ DSA problems",
+      image: gfg,
+      link: "https://www.geeksforgeeks.org/user/ajaycu23/?utm_source=geeksforgeeks&utm_medium=my_profile&utm_campaign=auth_user"
+    },
+    {
+      title: "6 ⭐ Problem Solver",
+      image: hackerrank,
+      link: "https://www.hackerrank.com/profile/Ajay_Kumar"
+    },
+  ]
   
   const testimonials = [
     {
@@ -292,11 +321,30 @@ import {
       image: weather,
       source_code_link: "https://howstheweather.onrender.com/",
     },
+    
+    {
+      name: "EMP",
+      description:
+        "Collaborated with an ML engineer. Utilized Paillier scheme for homomorphic encryption to encrypt sensitive medical data, ensuring privacy. Leveraged AWS-S3 bucket for storage and executed a predictive model hosted on AWS Lambda functions, for breast cancer diagnosis. Upon completion, the system securely downloads and decrypts results, providing accurate predictions while maintaining data confidentiality.",
+      tags: [
+        {
+          name: "java",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "machine learning",
+          color: "pink-text-gradient",
+        },
+       
+      ],
+      image: emp,
+      source_code_link: "https://drive.google.com/file/d/1PfNxv2OKBC0ZtAQZS8jpzVkN-mq_PPxo/view?usp=sharing",
+    },
 
     {
       name: "React Shopping Cart",
       description:
-        "A React.js Shopping Cart for seamless product browsing, selection, and checkout. Allows users to add, view, and manage items in the cart dynamically.",
+        "Created a Shopping Cart Application using React.js, offering users a seamless shopping experience. The application allows users to browse products, add them to the cart, and manage quantities. With dynamic rendering and state management, users can easily view their selected items and proceed to checkout.",
       tags: [
         {
           name: "reactjs",
@@ -311,6 +359,7 @@ import {
       image: reactcart,
       source_code_link: "https://react-shopping-cart-23.netlify.app/",
     },
+
   ];
   
-  export { services, technologies, experiences, testimonials, projects, socials };
+  export { services, technologies, experiences, achievements, testimonials, projects, socials };

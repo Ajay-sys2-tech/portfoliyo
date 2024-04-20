@@ -37,6 +37,14 @@ import letflix from "./letflix.png";
 import glocify from "./glocify.png";
 import weather from "./weather.png";
 import reactcart from "./reactcart.png";
+import emp from "./emp.png";
+
+import ace from "./ace.png";
+import leetcode from "./leetcode.png";
+import gfg from "./gfg.png";
+import hackerrank from "./hackerrank.png";
+
+
 
 export {
   logo,
@@ -74,5 +82,10 @@ export {
   letflix,
   reactcart,
   glocify,
-  weather
+  weather,
+  emp,
+  ace,
+  leetcode,
+  gfg,
+  hackerrank
 };

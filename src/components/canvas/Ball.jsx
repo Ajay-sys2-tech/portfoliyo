@@ -6,12 +6,13 @@ import CanvasLoader from "../Loader";
 
 const Ball = (props) => {
   const [decal] = useTexture([props.imgUrl]);
+  // const [decal] = useTexture(["Skills"]);
 
   return (
     <Float
       speed={1.75}
       rotationIntensity={1}
-      floatIntensity={2}
+      floatIntensity={5}
     >
       <ambientLight intensity={0.25} />
       <directionalLight position={[0, 0, 0.05]} />
@@ -23,6 +24,7 @@ const Ball = (props) => {
           polygonOffsetFactor={-5} 
           flatShading
         />
+        
         <Decal
           position={[0, 0, 1]}
           rotation={[2 * Math.PI, 0, 6.25]}
@@ -43,7 +45,7 @@ const BallCanvas = ({icon, rotationSpeed}) => {
           autoRotateSpeed={rotationSpeed}
           enableZoom={false} 
         />
-        <Ball imgUrl={icon} />
+        <Ball imgUrl={icon}  />
       </Suspense>
       <Preload all />
     </Canvas>
