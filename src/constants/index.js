@@ -21,6 +21,7 @@ import {
     tcs,
     persistent,
     vitto,
+    memories,
     letflix,
     reactcart,
     glocify,
@@ -262,6 +263,39 @@ import {
   ];
   
   const projects = [
+    {
+      name: "Memories",
+      description:
+        "Memory Book is a social sharing platform enabling users to create and share memories from significant life events. Capture cherished moments and share them with friends and family, fostering connections and preserving precious memories.",
+      tags: [
+        {
+          name: "reactjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "materialui",
+          color: "green-text-gradient",
+        },
+        {
+          name: "nodejs",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "mongodb",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "render",
+          color: "green-text-gradient",
+        },
+        {
+          name: "vercel",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: memories,
+      source_code_link: "https://memoriesbook.vercel.app/",
+    },
     {
       name: "Letflix",
       description:

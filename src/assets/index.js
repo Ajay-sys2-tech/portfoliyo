@@ -33,6 +33,7 @@ import vitto from "./company/vitto.png";
 import tcs from "./company/tcs.png";
 import tesla from "./company/tesla.png";
 
+import memories from "./memories.png";
 import letflix from "./letflix.png";
 import glocify from "./glocify.png";
 import weather from "./weather.png";
@@ -79,6 +80,7 @@ export {
   vitto,
   persistent,
   tesla,
+  memories,
   letflix,
   reactcart,
   glocify,
