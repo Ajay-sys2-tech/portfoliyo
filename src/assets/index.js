@@ -35,6 +35,7 @@ import tesla from "./company/tesla.png";
 
 import memories from "./memories.png";
 import letflix from "./letflix.png";
+import map from "./map.png"
 import glocify from "./glocify.png";
 import weather from "./weather.png";
 import reactcart from "./reactcart.png";
@@ -82,6 +83,7 @@ export {
   tesla,
   memories,
   letflix,
+  map,  
   reactcart,
   glocify,
   weather,

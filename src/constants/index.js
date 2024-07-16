@@ -23,6 +23,7 @@ import {
     vitto,
     memories,
     letflix,
+    map,
     reactcart,
     glocify,
     weather,
@@ -203,9 +204,9 @@ import {
       iconBg: "#554b59",
       date: "Sept 2023 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
+        "Migrated website from Next.js version 12 to 14, improving performance by 20% and reducing build times by 15%.",
+        "Developed a user-friendly app to replace Excel for data management, leading to a 40% decrease in errors and 30% increase in accuracy, saving admin time.", 
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
@@ -213,13 +214,13 @@ import {
 
   const achievements = [
     {
-      title: "Google Certified Cloud Associate Engineer",
+      title: "Google Certified Associate Cloud Engineer",
       image: ace,
       link: "https://drive.google.com/file/d/1LfGEiho0BM3f9o4AwvEY5sRxzllqA8ui/view?usp=sharing"
     },
    
     {
-      title: "Solved 430+ DSA problmes",
+      title: "Solved 500+ DSA problems",
       image: leetcode,
       link: "https://leetcode.com/ajay_yadav/"
     },
@@ -285,10 +286,6 @@ import {
           color: "pink-text-gradient",
         },
         {
-          name: "render",
-          color: "green-text-gradient",
-        },
-        {
           name: "vercel",
           color: "blue-text-gradient",
         },
@@ -309,9 +306,31 @@ import {
           name: "tailwind",
           color: "pink-text-gradient",
         },
+        
       ],
       image: letflix,
       source_code_link: "https://letflix-vert.vercel.app/",
+    },
+    {
+      name: "Interactive Map Search",
+      description:
+        "A dynamic map which allows users to search for specific users in the database and displays the results on an interactive map. The app is loaded with features like pagination and Algolia search, efficiently managing large datasets to deliver a smooth and user-friendly experience.",
+      tags: [
+        {
+          name: "reactjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "mapboxgl",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Algolia",
+          color: "green-text-gradient",
+        },
+      ],
+      image: map,
+      source_code_link: "https://google-map-one.vercel.app/",
     },
     {
       name: "E-commerce with Payment System",
@@ -355,26 +374,7 @@ import {
       image: weather,
       source_code_link: "https://howstheweather.onrender.com/",
     },
-    
-    {
-      name: "EMP",
-      description:
-        "Collaborated with an ML engineer. Utilized Paillier scheme for homomorphic encryption to encrypt sensitive medical data, ensuring privacy. Leveraged AWS-S3 bucket for storage and executed a predictive model hosted on AWS Lambda functions, for breast cancer diagnosis. Upon completion, the system securely downloads and decrypts results, providing accurate predictions while maintaining data confidentiality.",
-      tags: [
-        {
-          name: "java",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "machine learning",
-          color: "pink-text-gradient",
-        },
-       
-      ],
-      image: emp,
-      source_code_link: "https://drive.google.com/file/d/1PfNxv2OKBC0ZtAQZS8jpzVkN-mq_PPxo/view?usp=sharing",
-    },
-
+  
     {
       name: "React Shopping Cart",
       description:
@@ -392,6 +392,25 @@ import {
       ],
       image: reactcart,
       source_code_link: "https://react-shopping-cart-23.netlify.app/",
+    },
+
+    {
+      name: "EMP",
+      description:
+        "Collaborated with an ML engineer. Utilized Paillier scheme for homomorphic encryption to encrypt sensitive medical data, ensuring privacy. Leveraged AWS-S3 bucket for storage and executed a predictive model hosted on AWS Lambda functions, for breast cancer diagnosis. Upon completion, the system securely downloads and decrypts results, providing accurate predictions while maintaining data confidentiality.",
+      tags: [
+        {
+          name: "java",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "machine learning",
+          color: "pink-text-gradient",
+        },
+       
+      ],
+      image: emp,
+      source_code_link: "https://drive.google.com/file/d/1PfNxv2OKBC0ZtAQZS8jpzVkN-mq_PPxo/view?usp=sharing",
     },
 
   ];
