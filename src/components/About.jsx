@@ -43,7 +43,7 @@ const SocialCard = ({index, icon, link}) => {
         className=''
       >
             <img src={icon} alt={index} 
-            className='shadow-lg shadow-white w-16 h-16 object-contain rounded-full hover:cursor-pointer' />
+            className='shadow-lg hover:shadow-white w-16 h-16 object-contain rounded-full hover:cursor-pointer' />
           </div>
     </motion.div>
   )
@@ -65,16 +65,16 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-6xl leading-[30px]'
       >
-        Results-driven software engineer with 1 year of professional experience and 1 year of internship experience, specializing in full-stack development. Proficient in data structures, algorithms, and design thinking. GCP Certified Associate Cloud Engineer with a track record of solving 400+ problems on LeetCode. Aspiring full-stack expert focused on industry leadership. Known for strong personal attributes including empathy, time management, and planning skills.
+        Results-driven software engineer with 3 years of professional experience, specializing in full-stack development. Proficient in data structures, algorithms, and design thinking. GCP Certified Associate Cloud Engineer with a track record of solving 500+ problems on LeetCode. Aspiring full-stack expert focused on industry leadership. Known for strong personal attributes including empathy, time management, and planning skills.
       </motion.p>
 
-      <div className='mt-20 flex flex-wrap gap-10'>
+      <div className='mt-20 flex flex-wrap gap-10 justify-between'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
 
-      <div className='mt-20 flex place-self-center justify-around gap-1'>
+      <div className='mt-20 flex justify-around gap-64'>
         {socials.map((social, index) => (
           <SocialCard key={social.title} index={index} {...social} />
         ))}

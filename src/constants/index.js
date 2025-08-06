@@ -54,20 +54,20 @@ import {
   ];
   
   const services = [
+    // {
+    //   title: "Web Developer",
+    //   icon: web,
+    // },
     {
-      title: "Web Developer",
-      icon: web,
-    },
-    {
-      title: "Frontend Developer",
+      title: "Frontend Development",
       icon: mobile,
     },
     {
-      title: "Backend Developer",
+      title: "Backend Development",
       icon: backend,
     },
     {
-      title: "Cloud Developer",
+      title: "Cloud Development",
       icon: creator,
     },
   ];
@@ -155,15 +155,38 @@ import {
   
   const experiences = [
     {
-      title: "Machine Learning Engineer Intern",
-      company_name: "TCS",
-      icon: tcs,
-      iconBg: "#000000",
-      date: "June 2022 - July 2022",
+      title: "Software Engineer",
+      company_name: "Persistent Systems",
+      icon: persistent,
+      iconBg: "#554b59",
+      date: "Sept 2023 - Present",
       points: [
-        "Developed NLP functions for medical research data analysis.",
-        "Collaborated with multidisciplinary team to refine algorithms.",
-        "Demonstrated strong problem-solving skills in optimizing NLP algorithms.",
+        // "Migrated website from Next.js version 12 to 14, improving performance by 20% and reducing build times by 15%.",
+        // "Developed a user-friendly app to replace Excel for data management, leading to a 40% decrease in errors and 30% increase in accuracy, saving admin time.", 
+        // "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+        // "Participating in code reviews and providing constructive feedback to other developers.",
+
+        "At Persistent Systems, I’ve worked as a full-stack developer, building scalable, secure, and user-focused web applications across various domains. My experience spans both backend and frontend development, often owning entire features from database design to user interface — and everything in between.",
+        "On the backend, I’ve built RESTful APIs using Node.js and integrated complex third-party systems like Shopify using GraphQL. I focus on clean architecture, automation, and secure authentication using JWT and OAuth.",
+        "I’ve developed responsive, modern interfaces using React.js and led performance-focused migrations between major versions of frameworks like Next.js. My focus is on usability and speed, incorporating real-time validation and thoughtful UX to reduce friction for end users and internal teams alike.",
+        "I deploy applications using Docker and Google Cloud Platform (GCP), optimizing for speed, scalability, and uptime. Testing and maintainability are part of my core workflow — I regularly write meaningful tests to ensure code quality.",
+
+      ],
+    },
+
+    {
+      title: "Full Stack Engineer Intern",
+      company_name: "Vitto Microfinance.AI",
+      icon: vitto,
+      iconBg: "#FFFFFF",
+      date: "May 2023 - Sept 2023",
+      points: [
+       "During my immersive Full Stack internship in a dynamic fintech startup, I spearheaded various projects leveraging the PERN stack",
+       "Optimized API for paginated data, cutting call time by 50%.",
+       "Upgraded UI for enhanced user experience.",
+       "Implemented CSV export for streamlined data analysis across admin pages.",
+       "Developed bulk customized notification feature, boosting user engagement by 25% and retention by 15%.",
+       "Migrated 40% of API from JavaScript to TypeScript, improving maintainability and typing.",
       ],
     },
     {
@@ -183,33 +206,19 @@ import {
       ],
     },
     {
-      title: "Full Stack Engineer Intern",
-      company_name: "Vitto Microfinance.AI",
-      icon: vitto,
-      iconBg: "#FFFFFF",
-      date: "May 2023 - Sept 2023",
+      title: "Machine Learning Engineer Intern",
+      company_name: "TCS",
+      icon: tcs,
+      iconBg: "#000000",
+      date: "June 2022 - July 2022",
       points: [
-       "During my immersive Full Stack internship in a dynamic fintech startup, I spearheaded various projects leveraging the PERN stack",
-       "Optimized API for paginated data, cutting call time by 50%.",
-       "Upgraded UI for enhanced user experience.",
-       "Implemented CSV export for streamlined data analysis across admin pages.",
-       "Developed bulk customized notification feature, boosting user engagement by 25% and retention by 15%.",
-       "Migrated 40% of API from JavaScript to TypeScript, improving maintainability and typing.",
+        "Developed NLP functions for medical research data analysis.",
+        "Collaborated with multidisciplinary team to refine algorithms.",
+        "Demonstrated strong problem-solving skills in optimizing NLP algorithms.",
       ],
     },
-    {
-      title: "Software Engineer",
-      company_name: "Persistent Systems",
-      icon: persistent,
-      iconBg: "#554b59",
-      date: "Sept 2023 - Present",
-      points: [
-        "Migrated website from Next.js version 12 to 14, improving performance by 20% and reducing build times by 15%.",
-        "Developed a user-friendly app to replace Excel for data management, leading to a 40% decrease in errors and 30% increase in accuracy, saving admin time.", 
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
+    
+    
   ];
 
   const achievements = [
@@ -375,29 +384,29 @@ import {
       source_code_link: "https://howstheweather.onrender.com/",
     },
   
-    {
-      name: "React Shopping Cart",
-      description:
-        "Created a Shopping Cart Application using React.js, offering users a seamless shopping experience. The application allows users to browse products, add them to the cart, and manage quantities. With dynamic rendering and state management, users can easily view their selected items and proceed to checkout.",
-      tags: [
-        {
-          name: "reactjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
+    // {
+    //   name: "React Shopping Cart",
+    //   description:
+    //     "Created a Shopping Cart Application using React.js, offering users a seamless shopping experience. The application allows users to browse products, add them to the cart, and manage quantities. With dynamic rendering and state management, users can easily view their selected items and proceed to checkout.",
+    //   tags: [
+    //     {
+    //       name: "reactjs",
+    //       color: "blue-text-gradient",
+    //     },
+    //     {
+    //       name: "css",
+    //       color: "pink-text-gradient",
+    //     },
        
-      ],
-      image: reactcart,
-      source_code_link: "https://react-shopping-cart-23.netlify.app/",
-    },
+    //   ],
+    //   image: reactcart,
+    //   source_code_link: "https://react-shopping-cart-23.netlify.app/",
+    // },
 
     {
       name: "EMP",
       description:
-        "Collaborated with an ML engineer. Utilized Paillier scheme for homomorphic encryption to encrypt sensitive medical data, ensuring privacy. Leveraged AWS-S3 bucket for storage and executed a predictive model hosted on AWS Lambda functions, for breast cancer diagnosis. Upon completion, the system securely downloads and decrypts results, providing accurate predictions while maintaining data confidentiality.",
+        "Collaborated with an ML engineer. Utilized Paillier scheme for homomorphic encryption to encrypt sensitive medical data, ensuring privacy. Leveraged AWS-S3 bucket for storage and executed a predictive model hosted on AWS Lambda, for breast cancer diagnosis. The system provides accurate predictions, maintaining data confidentiality.",
       tags: [
         {
           name: "java",
